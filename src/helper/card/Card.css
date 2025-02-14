@@ -1,0 +1,21 @@
+.cardContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    width: 100%;
+    height: 120px;
+    box-shadow: 0 0 10px 0 black;
+}
+.cardContainer>div:first-child{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* background-color: #EAEAEA; */
+    box-shadow: 0 0 5px 0 black;
+}
+.cardContainer>div:last-child{
+    display: grid;
+    grid-template-rows: 40% 60%;
+    gap: 8px;
+}

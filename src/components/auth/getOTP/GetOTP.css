@@ -1,0 +1,119 @@
+.verifyOTPContainer {
+    display: grid;
+    grid-template-columns: 46% 46%;
+    gap: 80px;
+    padding: 25px;
+    background-color: whitesmoke;
+}
+
+.verifyOTPContainer .victorImage {
+    width: 100%;
+    height: 600px;
+    border-radius: 5%;
+}
+
+.verifyOTPContainer .victorImage > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+}
+
+.verifyOTPContainer .verifyOTP {
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.verifyOTPContainer .verifyOTP > form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+    gap: 12px !important;
+    box-shadow: 0 0 10px 0 black;
+    padding: 40px;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.verifyOTPContainer .verifyOTP > form > div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 5px !important;
+}
+
+.verifyOTPContainer .verifyOTP > form > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.verifyOTPContainer .verifyOTP > form > div:nth-child(3) > button {
+    background-color: black;
+}
+
+.verifyOTPContainer .verifyOTP > form > div:nth-child(5) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.verifyOTPContainer .verifyOTP > form > div:nth-child(5) > div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.verifyOTPContainer .verifyOTP > form > div:nth-child(5) > div:last-child > a {
+    text-decoration: none;
+    color: black;
+    font: 14px 400 'Noto Sans';
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .verifyOTPContainer {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .verifyOTPContainer .victorImage {
+        height: 400px;
+    }
+
+    .verifyOTPContainer .verifyOTP > form {
+        padding: 20px;
+        margin-top: 10%;
+        box-shadow: 0 0 5px 0 black;
+    }
+
+    .verifyOTPContainer .verifyOTP > form > div:first-child h1 {
+        font-size: 22px;
+    }
+
+    .verifyOTPContainer .verifyOTP > form > div:nth-child(2) {
+        gap: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .verifyOTPContainer .victorImage {
+        height: 250px;
+    }
+
+    .verifyOTPContainer .verifyOTP > form {
+        padding: 15px;
+    }
+
+    .verifyOTPContainer .verifyOTP > form > div:nth-child(5) {
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .verifyOTPContainer .verifyOTP > form > div:nth-child(5) > div:last-child > a {
+        font-size: 12px;
+    }
+}

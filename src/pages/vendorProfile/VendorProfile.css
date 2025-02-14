@@ -1,0 +1,103 @@
+.vendorProfileContainer {
+  width: 100%;
+  height: 86vh;
+  padding: 25px;
+  overflow: hidden;
+}
+.vendorProfileSection {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 10px 0 black;
+  border-radius: 10px;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 25% 75%;
+  padding: 10px;
+  overflow: hidden;
+}
+.vendorProfileSection .personalDetails {
+  width: 100%;
+
+  border: 1px solid #ddddeb;
+  padding: 10px;
+  display: grid;
+  grid-template-rows: 33% 10% 57%;
+  gap: 12px;
+}
+.vendorProfileSection .personalDetails .section-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-bottom: 1px solid #ddddeb;
+}
+.vendorProfileSection .personalDetails .section-1 .profileImage {
+  width: 40%;
+  height: 60%;
+}
+.vendorProfileSection .personalDetails .section-1 .vendorName {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Roboto";
+}
+.vendorProfileSection .personalDetails .section-1 .vendorId {
+  width: 80%;
+  text-align: center;
+  height: 25px;
+  padding: 6px;
+  background-color: #86848a;
+  font-weight: bold;
+  color: white;
+  font-size: 12px;
+}
+.vendorProfileSection .personalDetails .section-2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  border-bottom: 1px solid #ddddeb;
+}
+.vendorProfileSection .personalDetails .section-2 .section-2-1 {
+  font-weight: bold;
+}
+.vendorProfileSection .personalDetails .section-2 .section-2-1,
+.section-2-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.vendorProfileSection .personalDetails .section-2 .section-2-1-1,
+.section-2-2-1 {
+  font-size: 14px;
+
+  font-family: "Roboto";
+}
+.vendorProfileSection .personalDetails .section-2 .section-2-1-2,
+.section-2-2-2 {
+  font-size: 12px;
+  font-family: "Roboto";
+}
+
+.vendorProfileSection .personalDetails .section-3 {
+  display: flex;
+  justify-content: space-between;
+}
+.vendorProfileSection .personalDetails .section-3 .leftSection,
+.rightSection {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Roboto";
+}
+.vendorProfileContainer .billDetails{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+}
+

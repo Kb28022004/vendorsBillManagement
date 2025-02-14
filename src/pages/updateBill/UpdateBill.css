@@ -1,0 +1,175 @@
+.billUpdateMainContainer {
+    width: 100%;
+    height: 85vh;
+    padding: 20px;
+  }
+  .billUpdateMainContainer .billUpdateContainer {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 black;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 8% 90%;
+    gap: 2%;
+    overflow: hidden;
+  }
+  .billUpdateMainContainer .billUpdateContainer .upperSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e0fa;
+  }
+  .billUpdateMainContainer .billUpdateContainer .upperSection > p {
+    font-size: 20px;
+    font-family: "Roboto";
+    font-weight: 500;
+  }
+  .billUpdateMainContainer .billUpdateContainer .upperSection > button {
+    color: black;
+    font-size: 14px;
+    font-family: "Roboto";
+    font-weight: 500;
+  }
+  
+  .billUpdateMainContainer
+    .billUpdateContainer
+    .lowerSection{
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+    }
+  
+  
+  
+  
+  .billUpdateMainContainer
+    .billUpdateContainer
+    .lowerSection
+    .personalDetailsSection {
+    display: grid;
+    grid-template-rows: 85% 15%;
+  
+  }
+  .billUpdateMainContainer
+    .billUpdateContainer
+    .lowerSection
+    .personalDetailsSection
+    .personalDetails {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+  }
+  .billUpdateMainContainer
+    .billUpdateContainer
+    .lowerSection
+    .personalDetailsSection
+    .personalDetails
+    .leftContainer,
+  .rightContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    gap: 8px;
+  }
+  .billUpdateMainContainer
+    .billUpdateContainer
+    .lowerSection
+    .personalDetailsSection
+    .personalDetails
+    .leftContainer
+    .leftContainer-1,
+  .rightContainer-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .billUpdateMainContainer
+    .billUpdateContainer
+    .lowerSection
+    .personalDetailsSection
+    .personalDetails
+    .leftContainer
+    .leftContainer-1
+    > label,
+  .billUpdateMainContainer
+    .billUpdateContainer
+    .lowerSection
+    .personalDetailsSection
+    .personalDetails
+    .rightContainer
+    .rightContainer-1
+    > label {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .billUpdateMainContainer
+    .billUpdateContainer
+    .lowerSection
+    .personalDetailsSection
+    .personalDetails
+    .leftContainer
+    .leftContainer-1
+    > input,.leftContainer-1> select,
+  .billUpdateMainContainer
+    .billUpdateContainer
+    .lowerSection
+    .personalDetailsSection
+    .personalDetails
+    .rightContainer
+    .rightContainer-1
+    > input,
+  select {
+    height: 36px; /* Adjust input height */
+    border-radius: 8px; /* Rounded corners */
+    padding: 8px; /* Inner padding */
+    border: 1px solid #ccc; /* Light border */
+    font-size: 12px;
+    border: 1px solid black;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box; /* Ensures padding doesn't affect dimensions */
+  }
+  
+  
+  
+  .billUpdateMainContainer
+    .billUpdateContainer
+    .lowerSection
+    .personalDetailsSection
+    .actionContainer {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 22px;
+  }
+  .billUpdateMainContainer
+    .billUpdateContainer
+    .lowerSection
+    .personalDetailsSection
+    .actionContainer
+    .createVendorBtn {
+      width: 15%;
+      height: 30px;
+    background-color: black;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 5px;
+    font-family: 'Nunito';
+  }
+  .billUpdateMainContainer
+    .billUpdateContainer
+    .lowerSection
+    .personalDetailsSection
+    .actionContainer
+    .cancelBtn {
+    width: 15%;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid black;
+    color: black;
+  }
+  

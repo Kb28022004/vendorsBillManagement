@@ -1,0 +1,133 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  align-items: center;
+  background: linear-gradient(to left, rgb(128, 95, 109) 0%, rgb(148, 233, 159) 100%);
+}
+
+.leftItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.leftItems > div:first-child {
+  cursor: pointer;
+}
+
+.rightItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.rightItems > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 250px; /* Slightly wider input for better user experience */
+  height: 40px;
+  border-radius: 35px;
+  background-color: #f5f7fa;
+  padding: 0 10px; /* Adjust padding for icon and input alignment */
+}
+
+.rightItems > div:first-child > input {
+  flex: 1; /* Allow input to take remaining space */
+  border: none;
+  outline: none;
+  background-color: #f5f7fa;
+  padding: 5px;
+  height: 40px;
+  border-radius: 35px;
+  font-size: 14px; /* Slightly smaller font size */
+}
+
+.rightItems > div:first-child > .searchIcon {
+  color: #888; /* Color for the search icon */
+  font-size: 25px; /* Adjust size of the icon */
+}
+
+.rightItems .rightItem-2 {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Reduced gap for better alignment */
+}
+
+.rightItems .rightItem-2 > div:first-child {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #888;
+  text-align: center;
+  position: relative;
+}
+
+.rightItems .rightItem-2 > div:first-child .notificationIcon {
+  color: white;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  cursor: pointer;
+}
+
+/* Adjustments for mobile responsiveness */
+@media (max-width: 768px) {
+  .header {
+    padding: 15px;
+  }
+
+  .leftItems {
+    gap: 20px;
+  }
+
+  .rightItems {
+    gap: 20px;
+  }
+
+  .rightItems > div:first-child {
+    width: 200px;
+  }
+
+  .rightItems .rightItem-2 {
+    gap: 10px; /* Smaller gap between notification and avatar */
+  }
+
+  .rightItems > div:first-child > input {
+    font-size: 12px; /* Adjust font size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 10px;
+  }
+
+  .leftItems {
+    gap: 15px;
+  }
+
+  .rightItems {
+    gap: 10px;
+  }
+
+  .rightItems > div:first-child {
+    width: 180px; /* Adjust input width */
+  }
+
+  .rightItems .rightItem-2 {
+    gap: 5px; /* Further reduce gap */
+  }
+
+  .rightItems > div:first-child > input {
+    font-size: 12px;
+  }
+
+  .rightItems .rightItem-2 > div:first-child {
+    width: 25px;
+    height: 25px;
+  }
+}

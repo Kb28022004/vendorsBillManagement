@@ -1,0 +1,143 @@
+.loginContainer {
+    display: grid;
+    grid-template-columns: 46% 46%;
+    gap: 80px;
+    padding: 25px;
+    background-color: whitesmoke;
+}
+
+.loginContainer .victorImage {
+    width: 100%;
+    height: 600px;
+    border-radius: 5%;
+}
+
+.loginContainer .victorImage > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+}
+
+.loginContainer .login {
+    width: 100%;
+    height: auto; /* Adjust height for smaller screens */
+    padding: 40px;
+    display: grid;
+    place-items: center;
+}
+
+.loginContainer .login > h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.loginContainer .login > form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px !important;
+    box-shadow: 0 0 10px 0 black;
+    padding: 20px;
+    background-color: white;
+    border-radius: 6px;
+    width: 100%; /* Ensure form adapts to container width */
+    max-width: 350px; /* Set a maximum width */
+}
+
+.loginContainer .login > form > div:first-child {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px !important;
+}
+
+.loginContainer .login > form > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.loginContainer .login > form > div:nth-child(3) {
+    display: flex;
+    gap: 6px !important;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loginContainer .login > form > div:nth-child(3) > div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.loginContainer .login > form > div:nth-child(3) > div:last-child > a {
+    text-decoration: none;
+    color: black;
+}
+
+.loginContainer .login > form > div:nth-child(4) > button {
+    background-color: black;
+}
+
+.loginContainer .login > form > div:nth-child(5) > p {
+    text-align: center;
+}
+
+.loginContainer .login > form > div:nth-child(5) > p > a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .loginContainer {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .loginContainer .victorImage {
+        height: 300px; /* Adjust image height */
+    }
+
+    .loginContainer .victorImage > img {
+        height: 100%;
+    }
+
+    .loginContainer .login > h1 {
+        font-size: 32px; /* Smaller font size for headings */
+    }
+
+    .loginContainer .login > form {
+        max-width: 100%; /* Remove max-width constraint */
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .loginContainer .login > form > div:first-child {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .loginContainer .victorImage {
+        height: 200px; /* Further adjust image height */
+    }
+
+    .loginContainer .login > h1 {
+        font-size: 28px;
+    }
+
+    .loginContainer .login > form {
+        gap: 10px; /* Reduce form gap */
+        padding: 10px;
+    }
+
+    .loginContainer .login > form > div:nth-child(3) {
+        flex-direction: column; /* Stack Remember Me and Forgot Password */
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .loginContainer .login > form > div:nth-child(5) > p {
+        font-size: 14px;
+    }
+}

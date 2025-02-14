@@ -1,0 +1,168 @@
+.paymentMainContainer {
+  width: 100%;
+  height: 85vh;
+  padding: 20px;
+}
+.paymentMainContainer .paymentContainer {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 black;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 10% 96%;
+  gap: 4%;
+}
+.paymentMainContainer .paymentContainer .upperSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e5e0fa;
+}
+.paymentMainContainer .paymentContainer .upperSection > p {
+  font-size: 20px;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+.paymentMainContainer .paymentContainer .upperSection > button {
+  color: black;
+  font-size: 14px;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+
+.paymentMainContainer .paymentContainer .lowerSection .personalDetailsSection {
+  display: grid;
+  grid-template-rows: 80% 15%;
+}
+.paymentMainContainer
+  .paymentContainer
+  .lowerSection
+  .personalDetailsSection
+  .personalDetails {
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+}
+.paymentMainContainer
+  .paymentContainer
+  .lowerSection
+  .personalDetailsSection
+  .personalDetails
+  .leftContainer,
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100% !important;
+  gap: 8px;
+}
+.paymentMainContainer
+  .paymentContainer
+  .lowerSection
+  .personalDetailsSection
+  .personalDetails
+  .leftContainer
+  .leftContainer-1,
+.rightContainer-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.paymentMainContainer
+  .paymentContainer
+  .lowerSection
+  .personalDetailsSection
+  .personalDetails
+  .leftContainer
+  .leftContainer-1
+  > label,
+.paymentMainContainer
+  .paymentContainer
+  .lowerSection
+  .personalDetailsSection
+  .personalDetails
+  .rightContainer
+  .rightContainer-1
+  > label {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+.paymentMainContainer
+  .paymentContainer
+  .lowerSection
+  .personalDetailsSection
+  .personalDetails
+  .leftContainer
+  .leftContainer-1
+  > input,
+.paymentMainContainer
+  .paymentContainer
+  .lowerSection
+  .personalDetailsSection
+  .personalDetails
+  .leftContainer
+  .leftContainer-1
+  > select,
+.paymentMainContainer
+  .paymentContainer
+  .lowerSection
+  .personalDetailsSection
+  .personalDetails
+  .rightContainer
+  .rightContainer-1
+  > input,
+.paymentMainContainer
+  .paymentContainer
+  .lowerSection
+  .personalDetailsSection
+  .personalDetails
+  .rightContainer
+  .rightContainer-1
+  > select {
+  height: 40px; /* Consistent height */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px; /* Inner padding */
+  border: 1px solid #ccc; /* Light border */
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box; /* Ensure padding doesn’t affect dimensions */
+  background-color: white; /* Ensure consistent background for all */
+}
+
+
+
+
+.paymentMainContainer
+  .paymentContainer
+  .lowerSection
+  .personalDetailsSection
+  .actionContainer {
+  display: flex;
+  gap: 12px;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.paymentMainContainer
+  .paymentContainer
+  .lowerSection
+  .personalDetailsSection
+  .actionContainer
+  .createVendorBtn {
+  width: 25%;
+  height: 42px;
+  background-color: black;
+}
+.paymentMainContainer
+  .paymentContainer
+  .lowerSection
+  .personalDetailsSection
+  .actionContainer
+  .cancelBtn {
+  width: 25%;
+  height: 42px;
+  border: 1px solid black;
+  color: black;
+}

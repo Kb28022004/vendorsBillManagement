@@ -1,0 +1,115 @@
+/* General styles */
+.adminDashboardContainer {
+  width: 100%;
+  height: 86vh;
+  max-height: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 20px;
+}
+
+/* First section (cards) */
+.adminDashboardContainer > div:first-child {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.adminDashboardContainer > div:last-child {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.adminDashboardContainer > div:last-child > div {
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.paymentRecieve,.paymentDue{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  gap: 25px !important;
+}
+.paymentFilterMonth,.paymentDueFilterMonth{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Cards */
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.card1, .card2, .card3, .card4 {
+  margin: 0;
+}
+
+/* Dropdown */
+.adminDashboardContainer > div:last-child select {
+  width: 100%;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .adminDashboardContainer {
+    grid-template-rows: auto auto;
+    padding: 15px;
+  }
+
+  .adminDashboardContainer > div:first-child {
+    grid-template-columns: 1fr 1fr; /* Two cards per row */
+  }
+
+  .adminDashboardContainer > div:last-child {
+    grid-template-columns: 1fr; /* Single column for charts */
+  }
+
+  .adminDashboardContainer > div:last-child > div {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .adminDashboardContainer {
+    padding: 10px;
+    grid-template-rows: auto auto;
+  }
+
+  .adminDashboardContainer > div:first-child {
+    grid-template-columns: 1fr; /* One card per row */
+  }
+
+  .adminDashboardContainer > div:last-child {
+    grid-template-columns: 1fr; /* One chart per row */
+  }
+
+  .adminDashboardContainer > div:last-child select {
+    width: 100%; /* Full width for dropdown */
+    margin-bottom: 10px;
+  }
+
+  .card {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .card1, .card2, .card3, .card4 {
+    margin-bottom: 10px; /* Add space below each card */
+  }
+
+  .adminDashboardContainer > div:last-child > div {
+    padding: 10px;
+  }
+}

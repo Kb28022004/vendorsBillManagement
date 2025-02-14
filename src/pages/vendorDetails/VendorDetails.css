@@ -1,0 +1,68 @@
+.vendorDetailsMainContainer {
+    width: 100%;
+    height: 86vh;
+    padding: 20px;
+  }
+  
+  .vendorDetails-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 black;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 10% 80% 8%;
+    gap: 2%;
+  }
+  
+  .upper-section--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e0fa;
+  }
+  
+  .upper-section--container > p {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Roboto";
+  }
+  
+  .upper-section--container > button {
+    width: 150px;
+    height: 35px;
+    border-radius: 20px;
+    color: black;
+    border: 1px solid #718ebf;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: "Roboto";
+  }
+  
+  .table-section-container {
+    overflow: hidden;
+  }
+  
+  .table-section-container .MuiTableContainer-root {
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+ 
+  
+  .MuiTableHead-root th {
+    font-weight: bold;
+  }
+
+  
+  .MuiTableBody-root tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .lower-section-container {
+
+ display: flex;
+ justify-content: space-between;
+
+  }
+  
+ 

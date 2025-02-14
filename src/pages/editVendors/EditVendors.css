@@ -1,0 +1,217 @@
+.editVendorsMainContainer {
+    width: 100%;
+    height: 85vh;
+    padding: 20px;
+  }
+  .editVendorsMainContainer .editVendorsContainer {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 black;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 10% 96%;
+    gap: 4%;
+  }
+  .editVendorsMainContainer .editVendorsContainer .upperSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e0fa;
+  }
+  .editVendorsMainContainer .editVendorsContainer .upperSection > p {
+    font-size: 20px;
+    font-family: "Roboto";
+    font-weight: 500;
+  }
+  .editVendorsMainContainer .editVendorsContainer .upperSection > button {
+    color: black;
+    font-size: 14px;
+    font-family: "Roboto";
+    font-weight: 500;
+  }
+  
+  .editVendorsMainContainer .editVendorsContainer .lowerSection {
+    display: grid;
+  
+    grid-template-columns: 20% 75%;
+    gap: 5%;
+  }
+  .editVendorsMainContainer
+    .editVendorsContainer
+    .lowerSection
+    .profilePhotoSection {
+    position: relative;
+  }
+  .editVendorsMainContainer
+    .editVendorsContainer
+    .lowerSection
+    .profilePhotoSection
+    .profileImage {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+  }
+  .editVendorsMainContainer
+    .editVendorsContainer
+    .lowerSection
+    .profilePhotoSection
+    .editIconContainer {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+    right: 150px;
+    left: 105px;
+  }
+  .editVendorsMainContainer
+    .editVendorsContainer
+    .lowerSection
+    .profilePhotoSection
+    .editIconContainer
+    .editIcon {
+    color: #fff;
+    width: 15px;
+    height: 15px;
+  }
+  .editVendorsMainContainer
+    .editVendorsContainer
+    .lowerSection
+    .personalDetailsSection {
+    display: grid;
+    grid: 80% 15%;
+   
+  }
+  .editVendorsMainContainer
+    .editVendorsContainer
+    .lowerSection
+    .personalDetailsSection
+    .personalDetails {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+  }
+  .editVendorsMainContainer
+    .editVendorsContainer
+    .lowerSection
+    .personalDetailsSection
+    .personalDetails
+    .leftContainer,
+  .rightContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    gap: 8px;
+  }
+  .editVendorsMainContainer
+    .editVendorsContainer
+    .lowerSection
+    .personalDetailsSection
+    .personalDetails
+    .leftContainer
+    .leftContainer-1,
+  .rightContainer-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .editVendorsMainContainer
+    .editVendorsContainer
+    .lowerSection
+    .personalDetailsSection
+    .personalDetails
+    .leftContainer
+    .leftContainer-1 > label,
+  .editVendorsMainContainer
+    .editVendorsContainer
+    .lowerSection
+    .personalDetailsSection
+    .personalDetails
+    .rightContainer
+    .rightContainer-1 > label {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+  
+  }
+  
+  .editVendorsMainContainer
+    .editVendorsContainer
+    .lowerSection
+    .personalDetailsSection
+    .personalDetails
+    .leftContainer
+    .leftContainer-1 > input,
+  .editVendorsMainContainer
+    .editVendorsContainer
+    .lowerSection
+    .personalDetailsSection
+    .personalDetails
+    .rightContainer
+    .rightContainer-1 > input,select {
+    height: 40px; /* Adjust input height */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Inner padding */
+    border: 1px solid #ccc; /* Light border */
+    font-size: 14px;
+    border: 1px solid black ;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box; /* Ensures padding doesn't affect dimensions */
+  }
+  
+  .editVendorsMainContainer
+    .editVendorsContainer
+    .lowerSection
+    .personalDetailsSection
+    .personalDetails
+    .leftContainer
+    .leftContainer-1 > input:focus,
+  .editVendorsMainContainer
+    .editVendorsContainer
+    .lowerSection
+    .personalDetailsSection
+    .personalDetails
+    .rightContainer
+    .rightContainer-1 > input:focus {
+    border-color: #6200ea; /* Highlight border color on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px #6200ea; /* Add a subtle shadow for focus */
+  }
+  
+  .editVendorsMainContainer
+    .editVendorsContainer
+    .lowerSection
+    .personalDetailsSection
+  .actionContainer{
+      
+      display: flex;
+      gap: 12px;
+      margin-bottom: 20px;
+  
+    }
+    .editVendorsMainContainer
+    .editVendorsContainer
+    .lowerSection
+    .personalDetailsSection
+  .actionContainer .createVendorBtn{
+      width: 25%;
+      height: 42px;
+      background-color: black;
+  }
+  .editVendorsMainContainer
+  .editVendorsContainer
+  .lowerSection
+  .personalDetailsSection
+  .actionContainer .cancelBtn{
+    width: 25%;
+    height: 42px;
+    border: 1px solid black;
+    color: black;
+  }
+  
+  
